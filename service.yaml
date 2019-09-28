@@ -1,0 +1,190 @@
+openapi: 3.0.2
+info:
+  description: API Description
+  title: Random Forest Prediction
+  version: 1.0.0
+servers:
+- url: http://127.0.0.1:7000
+components:
+  schemas:
+    helloinput:
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          x-kgrid-label: Please enter your name
+          x-kgrid-unit: ''
+          example: Bob
+    input:
+      type: object
+      properties:
+        age:
+          type: number
+          example: 25
+        sex:
+          type: string
+          example: M
+        race:
+          type: string
+          example: WHITE
+        ethnic:
+          type: string
+          example: NOT HISPANIC OR LATINO
+        Albumin_8:
+          type: number
+          example: 40
+        Alkaline.Phosphatase_8:
+          type: number
+          example: 65
+        Aspartate.Aminotransferase_8:
+          type: number
+          example: 12
+        Basophils_8:
+          type: number
+          example: 0.08
+        Blood.Urea.Nitrogen_8:
+          type: number
+          example: 4.1
+        C.Reactive.Protein_8:
+          type: number
+          example: 18
+        Calcium_8:
+          type: number
+          example: 2.33
+        Chloride_8:
+          type: number
+          example: 110
+        Creatinine_8:
+          type: number
+          example: 61
+        Eosinophils_8:
+          type: number
+          example: 0.19
+        Glucose_8:
+          type: number
+          example: 4.9
+        Hemoglobin_8:
+          type: number
+          example: 137
+        Leukocytes_8:
+          type: number
+          example: 12.04
+        Lymphocytes_8:
+          type: number
+          example: 2.37
+        Monocytes_8:
+          type: number
+          example: 0.89
+        Neutrophils..Segmented_8:
+          type: number
+          example: 10.27
+        Phosphate_8:
+          type: number
+          example: 2.67
+        Platelets_8:
+          type: number
+          example: 420
+        Potassium_8:
+          type: number
+          example: 4.1
+        Protein_8:
+          type: number
+          example: 74
+        Sodium_8:
+          type: number
+          example: 162
+        C.Reactive.Protein_0:
+          type: number
+          example: 58.1
+        C.Reactive.Protein_6:
+          type: number
+          example: 23.6
+        CNTO_6_Ratio_CRP:
+          type: number
+          example: 0.275
+        weight:
+          type: number
+          example: 67
+        C.Reactive.Protein_3:
+          type: number
+          example: 27.5
+        CNTO_3_Ratio_CRP:
+          type: number
+          example: 0.63
+        CNTO_0_Ratio_CRP:
+          type: number
+          example: 2.1
+        CRP_response:
+          type: boolean
+          example: false
+    output:
+      type: object
+paths:
+  /index/predict:
+    post:
+      summary: rf predict
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: https://demo.kgrid.org/schemas/basicerror.yaml
+  /index-2/predict:
+    post:
+      summary: rf predict
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: https://demo.kgrid.org/schemas/basicerror.yaml
+  /helloworld/welcome:
+    post:
+      tags:
+        - KO Endpoints
+      description: Welcome.
+      operationId: welcome
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/helloinput'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+
