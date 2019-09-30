@@ -37,8 +37,8 @@ A Swagger UI will open in a separate window for you to try the API.
 
 ### Test Server Routes
 The test server mounts three routes, each with an endpoint
-`/index/predict`
-`/index-2/predict`
-`helloworld/welcome`
+- `/index/predict`
+- `/index-2/predict`
+- `/helloworld/welcome`
 
 Both '/predict' endpoints use the same HepC example prediction script, with different output format.
