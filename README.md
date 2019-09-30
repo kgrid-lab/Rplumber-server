@@ -11,14 +11,20 @@ You can install packages by
 - using RStudio UI under `Tool -> Install Packages`, or,
 - using the console command
 ```
-install.packages("plumber")
+install.packages("randomForest")
 ```
 
 The following packages are needed to run the R script KO in the test server:
-- plumber
+- remote
 - jsonlite
 - randomForest
 - yaml
+
+Additionally, a dev version of `plumber` is needed for the test server to be able to serve the customized OpenAPI yaml file.
+To install the dev version, run
+```
+remotes::install_github("trestletech/plumber")
+```
 
 ## start the server
 
