@@ -10,6 +10,9 @@ The test server requires [RStudio](https://rstudio.com/products/rstudio/download
 You can install packages by
 - using RStudio UI under `Tool -> Install Packages`, or,
 - using the console command
+
+For example,
+
 ```
 install.packages("randomForest")
 ```
@@ -37,8 +40,5 @@ A Swagger UI will open in a separate window for you to try the API.
 
 ### Test Server Routes
 The test server mounts three routes, each with an endpoint
-- `/index/predict`
-- `/index-2/predict`
-- `/helloworld/welcome`
-
-Both '/predict' endpoints use the same HepC example prediction script, with different output format.
+- `/99999-hepc/predict`
+- `/hello-world/welcome`
