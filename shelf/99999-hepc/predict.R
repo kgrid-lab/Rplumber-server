@@ -1,5 +1,6 @@
 library(randomForest)
-load("outputRF.Rdata")
+## load("outputRF.Rdata")
+load("shelf/99999-hepc/outputRF.Rdata")
 
 ## The test data contains a dummy column "CRP_response"
 ## in order to use the predict() function, the value could be set to either T or F

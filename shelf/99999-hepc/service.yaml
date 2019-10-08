@@ -4,9 +4,9 @@ info:
   title: Random Forest Prediction
   version: 1.0.0
 paths:
-  /99999-hepc/predict:
+  /index/predict:
     post:
-      summary: rf predict
+      summary: 'rf predict'
       requestBody:
         description: inputs
         required: true
@@ -26,38 +26,13 @@ paths:
           content:
             application/json:
               schema:
-                $ref: https://demo.kgrid.org/schemas/basicerror.yaml
-  /hello-world/welcome:
-    post:
-      tags:
-        - KO Endpoints
-      description: Welcome.
-      operationId: welcome
-      requestBody:
-        description: inputs
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: '#/components/schemas/helloinput'
-      responses:
-        '200':
-          description: response
-          content:
-            application/json:
-              schema:
-                $ref: '#/components/schemas/output'
+                $ref: 'https://demo.kgrid.org/schemas/basicerror.yaml'
+      x-kgrid-activation:
+        artifact: predict.R
+        adapter: Rplumber
+        entry: predict
 components:
   schemas:
-    helloinput:
-      required:
-        - name
-      properties:
-        name:
-          type: string
-          x-kgrid-label: Please enter your name
-          x-kgrid-unit: ''
-          example: Bob
     input:
       type: object
       properties:

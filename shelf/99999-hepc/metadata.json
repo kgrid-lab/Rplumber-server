@@ -1,0 +1,19 @@
+{
+    "@id": "99999-hepc",
+    "@type": "koio:KnowledgeObject",
+    "identifier": "ark:/99999/hepc",
+    "version": "v1.0",
+    "title": "Prediction",
+    "contributors": "Kgrid Team",
+    "description": "Example of Hep C Prediction using Random Forest",
+    "keywords": [
+        "random forest",
+        "R"
+    ],
+    "hasServiceSpecification": "service.yaml",
+    "hasDeploymentSpecification": "$.paths.*.x-kgrid-activation",
+    "hasPayload": "$.paths.*.x-kgrid-activation.artifact",
+    "@context": [
+        "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
+    ]
+}

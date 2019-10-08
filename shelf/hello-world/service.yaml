@@ -1,0 +1,43 @@
+openapi: 3.0.2
+info:
+  description: API Description
+  title: Random Forest Prediction
+  version: 1.0.0
+paths:
+  /hello-world/welcome:
+    post:
+      tags:
+        - KO Endpoints
+      description: Welcome.
+      operationId: welcome
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/helloinput'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+      x-kgrid-activation:
+        artifact: hello.R
+        adapter: Rplumber
+        entry: welcome                
+components:
+  schemas:
+    helloinput:
+      required:
+        - name
+      properties:
+        name:
+          type: string
+          x-kgrid-label: Please enter your name
+          x-kgrid-unit: ''
+          example: Bob
+    output:
+      type: object

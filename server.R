@@ -14,7 +14,7 @@ make_server <- function(files) {
 }
 
 server <- make_server(dir("route", pattern = ".R", full.names = TRUE))
-server$run(  port = 7000, 
+server$run(  port = 7000,
              swagger = function(pr_, spec, ...) {
                spec <- yaml::read_yaml("service.yaml", handlers = list(seq = function(x) x))
                spec

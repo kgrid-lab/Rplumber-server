@@ -3,5 +3,7 @@
 function(req, res) {
   library(jsonlite)
   inputs <- fromJSON(req$postBody)
-  list(msg = paste0("Welcome to Knowledge Grid, ", inputs$name, "!"))
+  name = inputs$name
+  source('shelf/hello-world/hello.R', local=TRUE)
+  output <- as.data.frame(result)
 }

@@ -5,5 +5,6 @@ function(req, res) {
   library(jsonlite)
   inputs <- fromJSON(req$postBody)
   test_data <- as.data.frame(inputs)
-  source("predict.R", local=TRUE)
+  source("shelf/99999-hepc/predict.R", local=TRUE)
+  output <- as.data.frame(result)
 }
