@@ -1,5 +1,4 @@
 library(randomForest)
-## load("outputRF.Rdata")
 load("shelf/99999-hepc/outputRF.Rdata")
 
 ## The test data contains a dummy column "CRP_response"

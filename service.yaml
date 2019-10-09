@@ -1,12 +1,14 @@
 openapi: 3.0.2
 info:
-  description: API Description
-  title: Random Forest Prediction
+  description: Two prototype Knowledge Objects in R language are activated to provide REST API leveraging the R package of 'plumber'
+  title: Prototype Knowledge Objects activated in RStudio
   version: 1.0.0
 paths:
   /99999-hepc/predict:
     post:
-      summary: rf predict
+      tags:
+        - Prediction
+      description: Return the votes from Random Forest.
       requestBody:
         description: inputs
         required: true
@@ -30,8 +32,8 @@ paths:
   /hello-world/welcome:
     post:
       tags:
-        - KO Endpoints
-      description: Welcome.
+        - Hello World
+      description: Return a welcome message with the name input.
       operationId: welcome
       requestBody:
         description: inputs
