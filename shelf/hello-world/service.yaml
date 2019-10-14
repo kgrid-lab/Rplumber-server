@@ -7,7 +7,7 @@ paths:
   /hello-world/welcome:
     post:
       tags:
-        - KO Endpoints
+        - Hello World
       description: Welcome.
       operationId: welcome
       requestBody:
@@ -27,7 +27,7 @@ paths:
       x-kgrid-activation:
         artifact: hello.R
         adapter: Rplumber
-        entry: welcome                
+        entry: welcome
 components:
   schemas:
     helloinput:

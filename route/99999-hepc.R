@@ -1,5 +1,4 @@
 #* @apiTitle Simple API
-#* Predict
 #* @post /predict
 function(req, res) {
   library(jsonlite)

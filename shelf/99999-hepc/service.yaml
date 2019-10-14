@@ -4,8 +4,10 @@ info:
   title: Random Forest Prediction
   version: 1.0.0
 paths:
-  /index/predict:
+  /99999-hepc/predict:
     post:
+      tags:
+        - Random Forest Prediction
       summary: 'rf predict'
       requestBody:
         description: inputs

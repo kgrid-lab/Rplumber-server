@@ -9,7 +9,8 @@ make_server <- function(files) {
     path <- paste0("/", path)
     pr$mount(path, prFile)
   }
-
+  stat <- PlumberStatic$new("./shelf")
+  pr$mount("/shelf", stat)
   pr
 }
 
