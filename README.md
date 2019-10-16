@@ -39,6 +39,6 @@ source("server.R")
 A Swagger UI will open in a separate window for you to try the API.
 
 ### Test Server Routes
-The test server mounts three routes, each with an endpoint
+The test server mounts two routes, each with an endpoint
 - `/99999-hepc/predict`
 - `/hello-world/welcome`
