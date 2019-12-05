@@ -1,0 +1,6 @@
+library(survival)
+library(gbm)
+load("shelf/99999-survival/fit_boosting_full_lgt.RData")
+best.iter <- gbm.perf(fit1,method="OOB")
+result <- predict(fit1,newdata = datanew,n.trees = best.iter)
+print(result)

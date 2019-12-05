@@ -1,0 +1,109 @@
+openapi: 3.0.2
+info:
+  description: API Description
+  title: Random Forest Prediction
+  version: 1.0.0
+servers:
+- url: http://127.0.0.1:7000
+paths:
+  /99999-hepc/predict:
+    post:
+      tags: Random Forest Prediction
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: https://demo.kgrid.org/schemas/basicerror.yaml
+      x-kgrid-activation:
+        artifact: predict.R
+        adapter: Rplumber
+        entry: predict
+  /99999-hepc/inputschema:
+    get:
+      tags: Random Forest Prediction
+      responses:
+        '200':
+          description: OK
+  /99999-hepc/test:
+    get:
+      tags: Random Forest Prediction
+      responses:
+        '200':
+          description: OK
+  /99999-survival/predict:
+    post:
+      tags: Boosting Model Prediction
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: https://demo.kgrid.org/schemas/basicerror.yaml
+      x-kgrid-activation:
+        artifact: predict.R
+        adapter: Rplumber
+        entry: predict
+  /99999-survival/inputschema:
+    get:
+      tags: Boosting Model Prediction
+      responses:
+        '200':
+          description: OK
+  /99999-survival/test:
+    get:
+      tags: Boosting Model Prediction
+      responses:
+        '200':
+          description: OK
+  /hello-world/welcome:
+    post:
+      tags: Hello World
+      description: Welcome.
+      operationId: welcome
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/helloinput'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+      x-kgrid-activation:
+        artifact: hello.R
+        adapter: Rplumber
+        entry: welcome

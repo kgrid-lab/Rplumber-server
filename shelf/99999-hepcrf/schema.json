@@ -1,0 +1,344 @@
+{
+   "definitions": {},
+   "$schema": "http://json-schema.org/draft-07/schema#",
+   "$id": "http://example.com/root.json",
+   "type": "object",
+   "title": "The Root Schema",
+   "required": [
+     "age",
+     "sex",
+     "race",
+     "ethnic",
+     "Albumin_8",
+     "Alkaline.Phosphatase_8",
+     "Aspartate.Aminotransferase_8",
+     "Basophils_8",
+     "Blood.Urea.Nitrogen_8",
+     "C.Reactive.Protein_8",
+     "Calcium_8",
+     "Chloride_8",
+     "Creatinine_8",
+     "Eosinophils_8",
+     "Glucose_8",
+     "Hemoglobin_8",
+     "Leukocytes_8",
+     "Lymphocytes_8",
+     "Monocytes_8",
+     "Neutrophils..Segmented_8",
+     "Phosphate_8",
+     "Platelets_8",
+     "Potassium_8",
+     "Protein_8",
+     "Sodium_8",
+     "C.Reactive.Protein_0",
+     "C.Reactive.Protein_6",
+     "CNTO_6_Ratio_CRP",
+     "weight",
+     "C.Reactive.Protein_3",
+     "CNTO_3_Ratio_CRP",
+     "CNTO_0_Ratio_CRP",
+     "CRP_response"
+   ],
+   "properties": {
+     "age": {
+       "$id": "#/properties/age",
+       "type": "integer",
+       "title": "The Age Schema",
+       "default": 0,
+       "examples": [
+	25
+       ]
+     },
+     "sex": {
+       "$id": "#/properties/sex",
+       "type": "string",
+       "title": "The Sex Schema",
+       "default": "",
+       "examples": [
+         "M"
+       ],
+       "pattern": "^(.*)$"
+     },
+     "race": {
+       "$id": "#/properties/race",
+       "type": "string",
+       "title": "The Race Schema",
+       "default": "",
+       "examples": [
+         "WHITE"
+       ],
+       "pattern": "^(.*)$"
+     },
+     "ethnic": {
+       "$id": "#/properties/ethnic",
+       "type": "string",
+       "title": "The Ethnic Schema",
+       "default": "",
+       "examples": [
+         "NOT HISPANIC OR LATINO"
+       ],
+       "pattern": "^(.*)$"
+     },
+     "Albumin_8": {
+       "$id": "#/properties/Albumin_8",
+       "type": "integer",
+       "title": "The Albumin_8 Schema",
+       "default": 0,
+       "examples": [
+         40
+       ]
+     },
+     "Alkaline.Phosphatase_8": {
+       "$id": "#/properties/Alkaline.Phosphatase_8",
+       "type": "integer",
+       "title": "The Alkaline.phosphatase_8 Schema",
+       "default": 0,
+       "examples": [
+         65
+       ]
+     },
+     "Aspartate.Aminotransferase_8": {
+       "$id": "#/properties/Aspartate.Aminotransferase_8",
+       "type": "integer",
+       "title": "The Aspartate.aminotransferase_8 Schema",
+       "default": 0,
+       "examples": [
+         12
+       ]
+     },
+     "Basophils_8": {
+       "$id": "#/properties/Basophils_8",
+       "type": "number",
+       "title": "The Basophils_8 Schema",
+       "default": 0.0,
+       "examples": [
+         0.08
+       ]
+     },
+     "Blood.Urea.Nitrogen_8": {
+       "$id": "#/properties/Blood.Urea.Nitrogen_8",
+       "type": "number",
+       "title": "The Blood.urea.nitrogen_8 Schema",
+       "default": 0.0,
+       "examples": [
+         4.1
+       ]
+     },
+     "C.Reactive.Protein_8": {
+       "$id": "#/properties/C.Reactive.Protein_8",
+       "type": "integer",
+       "title": "The C.reactive.protein_8 Schema",
+       "default": 0,
+       "examples": [
+            18
+       ]
+     },
+     "Calcium_8": {
+       "$id": "#/properties/Calcium_8",
+       "type": "number",
+       "title": "The Calcium_8 Schema",
+       "default": 0.0,
+       "examples": [
+            2.33
+       ]
+     },
+     "Chloride_8": {
+       "$id": "#/properties/Chloride_8",
+       "type": "integer",
+       "title": "The Chloride_8 Schema",
+       "default": 0,
+       "examples": [
+         110
+       ]
+     },
+     "Creatinine_8": {
+       "$id": "#/properties/Creatinine_8",
+       "type": "integer",
+       "title": "The Creatinine_8 Schema",
+       "default": 0,
+       "examples": [
+         61
+       ]
+     },
+     "Eosinophils_8": {
+       "$id": "#/properties/Eosinophils_8",
+       "type": "number",
+       "title": "The Eosinophils_8 Schema",
+       "default": 0.0,
+       "examples": [
+         0.19
+       ]
+     },
+     "Glucose_8": {
+       "$id": "#/properties/Glucose_8",
+       "type": "number",
+       "title": "The Glucose_8 Schema",
+       "default": 0.0,
+       "examples": [
+            4.9
+       ]
+     },
+     "Hemoglobin_8": {
+       "$id": "#/properties/Hemoglobin_8",
+       "type": "integer",
+       "title": "The Hemoglobin_8 Schema",
+       "default": 0,
+       "examples": [
+            137
+       ]
+     },
+     "Leukocytes_8": {
+       "$id": "#/properties/Leukocytes_8",
+       "type": "number",
+       "title": "The Leukocytes_8 Schema",
+       "default": 0.0,
+       "examples": [
+         12.04
+       ]
+     },
+     "Lymphocytes_8": {
+       "$id": "#/properties/Lymphocytes_8",
+       "type": "number",
+       "title": "The Lymphocytes_8 Schema",
+       "default": 0.0,
+       "examples": [
+         2.37
+       ]
+     },
+     "Monocytes_8": {
+       "$id": "#/properties/Monocytes_8",
+       "type": "number",
+       "title": "The Monocytes_8 Schema",
+       "default": 0.0,
+       "examples": [
+         0.89
+       ]
+     },
+     "Neutrophils..Segmented_8": {
+       "$id": "#/properties/Neutrophils..Segmented_8",
+       "type": "number",
+       "title": "The Neutrophils..segmented_8 Schema",
+       "default": 0.0,
+       "examples": [
+            10.27
+       ]
+     },
+     "Phosphate_8": {
+       "$id": "#/properties/Phosphate_8",
+       "type": "number",
+       "title": "The Phosphate_8 Schema",
+       "default": 0.0,
+       "examples": [
+            2.67
+       ]
+     },
+     "Platelets_8": {
+       "$id": "#/properties/Platelets_8",
+       "type": "integer",
+       "title": "The Platelets_8 Schema",
+       "default": 0,
+       "examples": [
+         420
+       ]
+     },
+     "Potassium_8": {
+       "$id": "#/properties/Potassium_8",
+       "type": "number",
+       "title": "The Potassium_8 Schema",
+       "default": 0.0,
+       "examples": [
+            4.1
+       ]
+     },
+     "Protein_8": {
+       "$id": "#/properties/Protein_8",
+       "type": "integer",
+       "title": "The Protein_8 Schema",
+       "default": 0,
+       "examples": [
+         74
+       ]
+     },
+     "Sodium_8": {
+       "$id": "#/properties/Sodium_8",
+       "type": "integer",
+       "title": "The Sodium_8 Schema",
+       "default": 0,
+       "examples": [
+            162
+       ]
+     },
+     "C.Reactive.Protein_0": {
+       "$id": "#/properties/C.Reactive.Protein_0",
+       "type": "number",
+       "title": "The C.reactive.protein_0 Schema",
+       "default": 0.0,
+       "examples": [
+            58.1
+       ]
+     },
+     "C.Reactive.Protein_6": {
+       "$id": "#/properties/C.Reactive.Protein_6",
+       "type": "number",
+       "title": "The C.reactive.protein_6 Schema",
+       "default": 0.0,
+       "examples": [
+         23.6
+       ]
+     },
+     "CNTO_6_Ratio_CRP": {
+       "$id": "#/properties/CNTO_6_Ratio_CRP",
+       "type": "number",
+       "title": "The Cnto_6_ratio_crp Schema",
+       "default": 0.0,
+       "examples": [
+            0.275
+       ]
+     },
+     "weight": {
+       "$id": "#/properties/weight",
+       "type": "integer",
+       "title": "The Weight Schema",
+       "default": 0,
+       "examples": [
+            67
+       ]
+     },
+     "C.Reactive.Protein_3": {
+       "$id": "#/properties/C.Reactive.Protein_3",
+       "type": "number",
+       "title": "The C.reactive.protein_3 Schema",
+       "default": 0.0,
+       "examples": [
+            27.5
+       ]
+     },
+     "CNTO_3_Ratio_CRP": {
+       "$id": "#/properties/CNTO_3_Ratio_CRP",
+       "type": "number",
+       "title": "The Cnto_3_ratio_crp Schema",
+       "default": 0.0,
+       "examples": [
+         0.63
+       ]
+     },
+     "CNTO_0_Ratio_CRP": {
+       "$id": "#/properties/CNTO_0_Ratio_CRP",
+       "type": "number",
+       "title": "The Cnto_0_ratio_crp Schema",
+       "default": 0.0,
+       "examples": [
+            2.1
+       ]
+     },
+     "CRP_response": {
+       "$id": "#/properties/CRP_response",
+       "type": "boolean",
+       "title": "The Crp_response Schema",
+       "default": false,
+       "examples": [
+         false
+       ]
+     }
+   }
+ }

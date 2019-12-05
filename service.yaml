@@ -1,10 +1,20 @@
 openapi: 3.0.2
 info:
-  description: Two prototype Knowledge Objects in R language are activated to provide REST API leveraging the R package of 'plumber'
+  description: Three prototype Knowledge Objects in R language are activated to provide REST API leveraging the R package of 'plumber'
   title: Prototype Knowledge Objects activated in RStudio
   version: 1.0.0
 paths:
-  /99999-hepc/predict:
-    $ref: 'shelf/99999-hepc/service.yaml#/paths/~199999-hepc~1predict'
+  /99999-survival/predict:
+    $ref: 'shelf/99999-survival/service.yaml#/paths/~199999-survival~1predict'
+  /99999-survival/test:
+    $ref: 'shelf/99999-survival/service.yaml#/paths/~199999-survival~1test'
+  /99999-survival/inputschema:
+    $ref: 'shelf/99999-survival/service.yaml#/paths/~199999-survival~1inputschema'
   /hello-world/welcome:
     $ref: 'shelf/hello-world/service.yaml#/paths/~1hello-world~1welcome'
+  /99999-hepcrf/predict:
+    $ref: 'shelf/99999-hepcrf/service.yaml#/paths/~199999-hepcrf~1predict'
+  /99999-hepcrf/test:
+    $ref: 'shelf/99999-hepcrf/service.yaml#/paths/~199999-hepcrf~1test'
+  /99999-hepcrf/inputschema:
+    $ref: 'shelf/99999-hepcrf/service.yaml#/paths/~199999-hepcrf~1inputschema'

@@ -1,0 +1,1171 @@
+{
+  "definitions": {},
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "http://example.com/root.json",
+  "type": "object",
+  "title": "The Root Schema",
+  "required": [
+    "GENDERM",
+    "RACEHISPANIC",
+    "RACEMISSING",
+    "RACEOTHER",
+    "RACEWHITE",
+    "AGE",
+    "ALB_MAX",
+    "ALB_MIN",
+    "ALB_DIFFMAX",
+    "ALB_DIFFMIN",
+    "ALB_TVAR",
+    "ALB_LAST",
+    "ALKRATIO_MAX",
+    "ALKRATIO_MIN",
+    "ALKRATIO_DIFFMAX",
+    "ALKRATIO_DIFFMIN",
+    "ALKRATIO_TVAR",
+    "ALKRATIO_LAST",
+    "ALTRATIO_MAX",
+    "ALTRATIO_MIN",
+    "ALTRATIO_DIFFMAX",
+    "ALTRATIO_DIFFMIN",
+    "ALTRATIO_TVAR",
+    "ALTRATIO_LAST",
+    "ASTRATIO_MAX",
+    "ASTRATIO_MIN",
+    "ASTRATIO_DIFFMAX",
+    "ASTRATIO_DIFFMIN",
+    "ASTRATIO_TVAR",
+    "ASTRATIO_LAST",
+    "BIL_MAX",
+    "BIL_MIN",
+    "BIL_DIFFMAX",
+    "BIL_DIFFMIN",
+    "BIL_TVAR",
+    "BIL_LAST",
+    "BUN_MAX",
+    "BUN_MIN",
+    "BUN_DIFFMAX",
+    "BUN_DIFFMIN",
+    "BUN_TVAR",
+    "BUN_LAST",
+    "CI_MAX",
+    "CI_MIN",
+    "CI_DIFFMAX",
+    "CI_DIFFMIN",
+    "CI_TVAR",
+    "CI_LAST",
+    "CRE_MAX",
+    "CRE_MIN",
+    "CRE_DIFFMAX",
+    "CRE_DIFFMIN",
+    "CRE_TVAR",
+    "CRE_LAST",
+    "GLU_MAX",
+    "GLU_MIN",
+    "GLU_DIFFMAX",
+    "GLU_DIFFMIN",
+    "GLU_TVAR",
+    "GLU_LAST",
+    "HEM_MAX",
+    "HEM_MIN",
+    "HEM_DIFFMAX",
+    "HEM_DIFFMIN",
+    "HEM_TVAR",
+    "HEM_LAST",
+    "PLT_MAX",
+    "PLT_MIN",
+    "PLT_DIFFMAX",
+    "PLT_DIFFMIN",
+    "PLT_TVAR",
+    "PLT_LAST",
+    "K_MAX",
+    "K_MIN",
+    "K_DIFFMAX",
+    "K_DIFFMIN",
+    "K_TVAR",
+    "K_LAST",
+    "NA_MAX",
+    "NA_MIN",
+    "NA_DIFFMAX",
+    "NA_DIFFMIN",
+    "NA_TVAR",
+    "NA_LAST",
+    "TOTP_MAX",
+    "TOTP_MIN",
+    "TOTP_DIFFMAX",
+    "TOTP_DIFFMIN",
+    "TOTP_TVAR",
+    "TOTP_LAST",
+    "WBC_MAX",
+    "WBC_MIN",
+    "WBC_DIFFMAX",
+    "WBC_DIFFMIN",
+    "WBC_TVAR",
+    "WBC_LAST",
+    "APRI_MAX",
+    "APRI_MIN",
+    "APRI_DIFFMAX",
+    "APRI_DIFFMIN",
+    "APRI_TVAR",
+    "APRI_LAST",
+    "ASTALT_MAX",
+    "ASTALT_MIN",
+    "ASTALT_DIFFMAX",
+    "ASTALT_DIFFMIN",
+    "ASTALT_TVAR",
+    "ASTALT_LAST",
+    "BMI_MAX",
+    "BMI_MIN",
+    "BMI_DIFFMAX",
+    "BMI_DIFFMIN",
+    "BMI_TVAR",
+    "BMI_LAST",
+    "TimeToOutcome",
+    "Outcome"
+  ],
+  "properties": {
+    "GENDERM": {
+      "$id": "#/properties/GENDERM",
+      "type": "boolean",
+      "title": "The Genderm Schema",
+      "default": false,
+      "examples": [
+        true
+      ]
+    },
+    "RACEHISPANIC": {
+      "$id": "#/properties/RACEHISPANIC",
+      "type": "boolean",
+      "title": "The Racehispanic Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "RACEMISSING": {
+      "$id": "#/properties/RACEMISSING",
+      "type": "boolean",
+      "title": "The Racemissing Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "RACEOTHER": {
+      "$id": "#/properties/RACEOTHER",
+      "type": "boolean",
+      "title": "The Raceother Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "RACEWHITE": {
+      "$id": "#/properties/RACEWHITE",
+      "type": "boolean",
+      "title": "The Racewhite Schema",
+      "default": false,
+      "examples": [
+        false
+      ]
+    },
+    "AGE": {
+      "$id": "#/properties/AGE",
+      "type": "integer",
+      "title": "The Age Schema",
+      "default": 0,
+      "examples": [
+        52
+      ]
+    },
+    "ALB_MAX": {
+      "$id": "#/properties/ALB_MAX",
+      "type": "number",
+      "title": "The Alb_max Schema",
+      "default": 0.0,
+      "examples": [
+        4.2
+      ]
+    },
+    "ALB_MIN": {
+      "$id": "#/properties/ALB_MIN",
+      "type": "number",
+      "title": "The Alb_min Schema",
+      "default": 0.0,
+      "examples": [
+        3.7
+      ]
+    },
+    "ALB_DIFFMAX": {
+      "$id": "#/properties/ALB_DIFFMAX",
+      "type": "number",
+      "title": "The Alb_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.07247
+      ]
+    },
+    "ALB_DIFFMIN": {
+      "$id": "#/properties/ALB_DIFFMIN",
+      "type": "number",
+      "title": "The Alb_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.0801
+      ]
+    },
+    "ALB_TVAR": {
+      "$id": "#/properties/ALB_TVAR",
+      "type": "number",
+      "title": "The Alb_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.07657
+      ]
+    },
+    "ALB_LAST": {
+      "$id": "#/properties/ALB_LAST",
+      "type": "integer",
+      "title": "The Alb_last Schema",
+      "default": 0,
+      "examples": [
+        4
+      ]
+    },
+    "ALKRATIO_MAX": {
+      "$id": "#/properties/ALKRATIO_MAX",
+      "type": "number",
+      "title": "The Alkratio_max Schema",
+      "default": 0.0,
+      "examples": [
+        0.7477
+      ]
+    },
+    "ALKRATIO_MIN": {
+      "$id": "#/properties/ALKRATIO_MIN",
+      "type": "number",
+      "title": "The Alkratio_min Schema",
+      "default": 0.0,
+      "examples": [
+        0.5604
+      ]
+    },
+    "ALKRATIO_DIFFMAX": {
+      "$id": "#/properties/ALKRATIO_DIFFMAX",
+      "type": "number",
+      "title": "The Alkratio_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.0252
+      ]
+    },
+    "ALKRATIO_DIFFMIN": {
+      "$id": "#/properties/ALKRATIO_DIFFMIN",
+      "type": "number",
+      "title": "The Alkratio_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.0297
+      ]
+    },
+    "ALKRATIO_TVAR": {
+      "$id": "#/properties/ALKRATIO_TVAR",
+      "type": "number",
+      "title": "The Alkratio_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.02729
+      ]
+    },
+    "ALKRATIO_LAST": {
+      "$id": "#/properties/ALKRATIO_LAST",
+      "type": "number",
+      "title": "The Alkratio_last Schema",
+      "default": 0.0,
+      "examples": [
+        0.6429
+      ]
+    },
+    "ALTRATIO_MAX": {
+      "$id": "#/properties/ALTRATIO_MAX",
+      "type": "number",
+      "title": "The Altratio_max Schema",
+      "default": 0.0,
+      "examples": [
+        1.2444
+      ]
+    },
+    "ALTRATIO_MIN": {
+      "$id": "#/properties/ALTRATIO_MIN",
+      "type": "number",
+      "title": "The Altratio_min Schema",
+      "default": 0.0,
+      "examples": [
+        0.6508
+      ]
+    },
+    "ALTRATIO_DIFFMAX": {
+      "$id": "#/properties/ALTRATIO_DIFFMAX",
+      "type": "number",
+      "title": "The Altratio_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.0765
+      ]
+    },
+    "ALTRATIO_DIFFMIN": {
+      "$id": "#/properties/ALTRATIO_DIFFMIN",
+      "type": "number",
+      "title": "The Altratio_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.0947
+      ]
+    },
+    "ALTRATIO_TVAR": {
+      "$id": "#/properties/ALTRATIO_TVAR",
+      "type": "number",
+      "title": "The Altratio_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.08713
+      ]
+    },
+    "ALTRATIO_LAST": {
+      "$id": "#/properties/ALTRATIO_LAST",
+      "type": "number",
+      "title": "The Altratio_last Schema",
+      "default": 0.0,
+      "examples": [
+        0.8571
+      ]
+    },
+    "ASTRATIO_MAX": {
+      "$id": "#/properties/ASTRATIO_MAX",
+      "type": "number",
+      "title": "The Astratio_max Schema",
+      "default": 0.0,
+      "examples": [
+        1.3409
+      ]
+    },
+    "ASTRATIO_MIN": {
+      "$id": "#/properties/ASTRATIO_MIN",
+      "type": "number",
+      "title": "The Astratio_min Schema",
+      "default": 0.0,
+      "examples": [
+        0.75
+      ]
+    },
+    "ASTRATIO_DIFFMAX": {
+      "$id": "#/properties/ASTRATIO_DIFFMAX",
+      "type": "number",
+      "title": "The Astratio_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.079
+      ]
+    },
+    "ASTRATIO_DIFFMIN": {
+      "$id": "#/properties/ASTRATIO_DIFFMIN",
+      "type": "number",
+      "title": "The Astratio_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.0949
+      ]
+    },
+    "ASTRATIO_TVAR": {
+      "$id": "#/properties/ASTRATIO_TVAR",
+      "type": "number",
+      "title": "The Astratio_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.08856
+      ]
+    },
+    "ASTRATIO_LAST": {
+      "$id": "#/properties/ASTRATIO_LAST",
+      "type": "number",
+      "title": "The Astratio_last Schema",
+      "default": 0.0,
+      "examples": [
+        0.9512
+      ]
+    },
+    "BIL_MAX": {
+      "$id": "#/properties/BIL_MAX",
+      "type": "number",
+      "title": "The Bil_max Schema",
+      "default": 0.0,
+      "examples": [
+        0.8
+      ]
+    },
+    "BIL_MIN": {
+      "$id": "#/properties/BIL_MIN",
+      "type": "number",
+      "title": "The Bil_min Schema",
+      "default": 0.0,
+      "examples": [
+        0.4
+      ]
+    },
+    "BIL_DIFFMAX": {
+      "$id": "#/properties/BIL_DIFFMAX",
+      "type": "number",
+      "title": "The Bil_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.05743
+      ]
+    },
+    "BIL_DIFFMIN": {
+      "$id": "#/properties/BIL_DIFFMIN",
+      "type": "number",
+      "title": "The Bil_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.0636
+      ]
+    },
+    "BIL_TVAR": {
+      "$id": "#/properties/BIL_TVAR",
+      "type": "number",
+      "title": "The Bil_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.5938
+      ]
+    },
+    "BIL_LAST": {
+      "$id": "#/properties/BIL_LAST",
+      "type": "number",
+      "title": "The Bil_last Schema",
+      "default": 0.0,
+      "examples": [
+        0.6
+      ]
+    },
+    "BUN_MAX": {
+      "$id": "#/properties/BUN_MAX",
+      "type": "integer",
+      "title": "The Bun_max Schema",
+      "default": 0,
+      "examples": [
+        17
+      ]
+    },
+    "BUN_MIN": {
+      "$id": "#/properties/BUN_MIN",
+      "type": "integer",
+      "title": "The Bun_min Schema",
+      "default": 0,
+      "examples": [
+        10
+      ]
+    },
+    "BUN_DIFFMAX": {
+      "$id": "#/properties/BUN_DIFFMAX",
+      "type": "number",
+      "title": "The Bun_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        1.4194
+      ]
+    },
+    "BUN_DIFFMIN": {
+      "$id": "#/properties/BUN_DIFFMIN",
+      "type": "number",
+      "title": "The Bun_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -1.368
+      ]
+    },
+    "BUN_TVAR": {
+      "$id": "#/properties/BUN_TVAR",
+      "type": "number",
+      "title": "The Bun_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        1.3135
+      ]
+    },
+    "BUN_LAST": {
+      "$id": "#/properties/BUN_LAST",
+      "type": "integer",
+      "title": "The Bun_last Schema",
+      "default": 0,
+      "examples": [
+        13
+      ]
+    },
+    "CI_MAX": {
+      "$id": "#/properties/CI_MAX",
+      "type": "integer",
+      "title": "The Ci_max Schema",
+      "default": 0,
+      "examples": [
+        106
+      ]
+    },
+    "CI_MIN": {
+      "$id": "#/properties/CI_MIN",
+      "type": "integer",
+      "title": "The Ci_min Schema",
+      "default": 0,
+      "examples": [
+        101
+      ]
+    },
+    "CI_DIFFMAX": {
+      "$id": "#/properties/CI_DIFFMAX",
+      "type": "number",
+      "title": "The Ci_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        1.0871
+      ]
+    },
+    "CI_DIFFMIN": {
+      "$id": "#/properties/CI_DIFFMIN",
+      "type": "number",
+      "title": "The Ci_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -1.0231
+      ]
+    },
+    "CI_TVAR": {
+      "$id": "#/properties/CI_TVAR",
+      "type": "number",
+      "title": "The Ci_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.9979
+      ]
+    },
+    "CI_LAST": {
+      "$id": "#/properties/CI_LAST",
+      "type": "integer",
+      "title": "The Ci_last Schema",
+      "default": 0,
+      "examples": [
+        103
+      ]
+    },
+    "CRE_MAX": {
+      "$id": "#/properties/CRE_MAX",
+      "type": "number",
+      "title": "The Cre_max Schema",
+      "default": 0.0,
+      "examples": [
+        1.1
+      ]
+    },
+    "CRE_MIN": {
+      "$id": "#/properties/CRE_MIN",
+      "type": "number",
+      "title": "The Cre_min Schema",
+      "default": 0.0,
+      "examples": [
+        0.9
+      ]
+    },
+    "CRE_DIFFMAX": {
+      "$id": "#/properties/CRE_DIFFMAX",
+      "type": "number",
+      "title": "The Cre_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.04443
+      ]
+    },
+    "CRE_DIFFMIN": {
+      "$id": "#/properties/CRE_DIFFMIN",
+      "type": "number",
+      "title": "The Cre_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.04348
+      ]
+    },
+    "CRE_TVAR": {
+      "$id": "#/properties/CRE_TVAR",
+      "type": "number",
+      "title": "The Cre_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.0398
+      ]
+    },
+    "CRE_LAST": {
+      "$id": "#/properties/CRE_LAST",
+      "type": "integer",
+      "title": "The Cre_last Schema",
+      "default": 0,
+      "examples": [
+        1
+      ]
+    },
+    "GLU_MAX": {
+      "$id": "#/properties/GLU_MAX",
+      "type": "integer",
+      "title": "The Glu_max Schema",
+      "default": 0,
+      "examples": [
+        12
+      ]
+    },
+    "GLU_MIN": {
+      "$id": "#/properties/GLU_MIN",
+      "type": "number",
+      "title": "The Glu_min Schema",
+      "default": 0.0,
+      "examples": [
+        8.7
+      ]
+    },
+    "GLU_DIFFMAX": {
+      "$id": "#/properties/GLU_DIFFMAX",
+      "type": "number",
+      "title": "The Glu_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.8696
+      ]
+    },
+    "GLU_DIFFMIN": {
+      "$id": "#/properties/GLU_DIFFMIN",
+      "type": "number",
+      "title": "The Glu_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.949
+      ]
+    },
+    "GLU_TVAR": {
+      "$id": "#/properties/GLU_TVAR",
+      "type": "number",
+      "title": "The Glu_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.8717
+      ]
+    },
+    "GLU_LAST": {
+      "$id": "#/properties/GLU_LAST",
+      "type": "number",
+      "title": "The Glu_last Schema",
+      "default": 0.0,
+      "examples": [
+        10.1
+      ]
+    },
+    "HEM_MAX": {
+      "$id": "#/properties/HEM_MAX",
+      "type": "number",
+      "title": "The Hem_max Schema",
+      "default": 0.0,
+      "examples": [
+        15.6
+      ]
+    },
+    "HEM_MIN": {
+      "$id": "#/properties/HEM_MIN",
+      "type": "integer",
+      "title": "The Hem_min Schema",
+      "default": 0,
+      "examples": [
+        14
+      ]
+    },
+    "HEM_DIFFMAX": {
+      "$id": "#/properties/HEM_DIFFMAX",
+      "type": "number",
+      "title": "The Hem_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.2306
+      ]
+    },
+    "HEM_DIFFMIN": {
+      "$id": "#/properties/HEM_DIFFMIN",
+      "type": "number",
+      "title": "The Hem_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.291
+      ]
+    },
+    "HEM_TVAR": {
+      "$id": "#/properties/HEM_TVAR",
+      "type": "number",
+      "title": "The Hem_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.2682
+      ]
+    },
+    "HEM_LAST": {
+      "$id": "#/properties/HEM_LAST",
+      "type": "number",
+      "title": "The Hem_last Schema",
+      "default": 0.0,
+      "examples": [
+        14.8
+      ]
+    },
+    "PLT_MAX": {
+      "$id": "#/properties/PLT_MAX",
+      "type": "number",
+      "title": "The Plt_max Schema",
+      "default": 0.0,
+      "examples": [
+        25.7
+      ]
+    },
+    "PLT_MIN": {
+      "$id": "#/properties/PLT_MIN",
+      "type": "number",
+      "title": "The Plt_min Schema",
+      "default": 0.0,
+      "examples": [
+        19.5
+      ]
+    },
+    "PLT_DIFFMAX": {
+      "$id": "#/properties/PLT_DIFFMAX",
+      "type": "number",
+      "title": "The Plt_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.9277
+      ]
+    },
+    "PLT_DIFFMIN": {
+      "$id": "#/properties/PLT_DIFFMIN",
+      "type": "number",
+      "title": "The Plt_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -1.01
+      ]
+    },
+    "PLT_TVAR": {
+      "$id": "#/properties/PLT_TVAR",
+      "type": "number",
+      "title": "The Plt_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        1.01
+      ]
+    },
+    "PLT_LAST": {
+      "$id": "#/properties/PLT_LAST",
+      "type": "number",
+      "title": "The Plt_last Schema",
+      "default": 0.0,
+      "examples": [
+        22.2
+      ]
+    },
+    "K_MAX": {
+      "$id": "#/properties/K_MAX",
+      "type": "number",
+      "title": "The K_max Schema",
+      "default": 0.0,
+      "examples": [
+        4.6
+      ]
+    },
+    "K_MIN": {
+      "$id": "#/properties/K_MIN",
+      "type": "number",
+      "title": "The K_min Schema",
+      "default": 0.0,
+      "examples": [
+        3.9
+      ]
+    },
+    "K_DIFFMAX": {
+      "$id": "#/properties/K_DIFFMAX",
+      "type": "number",
+      "title": "The K_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.1505
+      ]
+    },
+    "K_DIFFMIN": {
+      "$id": "#/properties/K_DIFFMIN",
+      "type": "number",
+      "title": "The K_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.1513
+      ]
+    },
+    "K_TVAR": {
+      "$id": "#/properties/K_TVAR",
+      "type": "number",
+      "title": "The K_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.143
+      ]
+    },
+    "K_LAST": {
+      "$id": "#/properties/K_LAST",
+      "type": "number",
+      "title": "The K_last Schema",
+      "default": 0.0,
+      "examples": [
+        4.2
+      ]
+    },
+    "NA_MAX": {
+      "$id": "#/properties/NA_MAX",
+      "type": "integer",
+      "title": "The Na_max Schema",
+      "default": 0,
+      "examples": [
+        141
+      ]
+    },
+    "NA_MIN": {
+      "$id": "#/properties/NA_MIN",
+      "type": "integer",
+      "title": "The Na_min Schema",
+      "default": 0,
+      "examples": [
+        137
+      ]
+    },
+    "NA_DIFFMAX": {
+      "$id": "#/properties/NA_DIFFMAX",
+      "type": "number",
+      "title": "The Na_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.9318
+      ]
+    },
+    "NA_DIFFMIN": {
+      "$id": "#/properties/NA_DIFFMIN",
+      "type": "number",
+      "title": "The Na_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.9587
+      ]
+    },
+    "NA_TVAR": {
+      "$id": "#/properties/NA_TVAR",
+      "type": "number",
+      "title": "The Na_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.8822
+      ]
+    },
+    "NA_LAST": {
+      "$id": "#/properties/NA_LAST",
+      "type": "integer",
+      "title": "The Na_last Schema",
+      "default": 0,
+      "examples": [
+        139
+      ]
+    },
+    "TOTP_MAX": {
+      "$id": "#/properties/TOTP_MAX",
+      "type": "number",
+      "title": "The Totp_max Schema",
+      "default": 0.0,
+      "examples": [
+        7.9
+      ]
+    },
+    "TOTP_MIN": {
+      "$id": "#/properties/TOTP_MIN",
+      "type": "number",
+      "title": "The Totp_min Schema",
+      "default": 0.0,
+      "examples": [
+        7.1
+      ]
+    },
+    "TOTP_DIFFMAX": {
+      "$id": "#/properties/TOTP_DIFFMAX",
+      "type": "number",
+      "title": "The Totp_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.1098
+      ]
+    },
+    "TOTP_DIFFMIN": {
+      "$id": "#/properties/TOTP_DIFFMIN",
+      "type": "number",
+      "title": "The Totp_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.1295
+      ]
+    },
+    "TOTP_TVAR": {
+      "$id": "#/properties/TOTP_TVAR",
+      "type": "number",
+      "title": "The Totp_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.1243
+      ]
+    },
+    "TOTP_LAST": {
+      "$id": "#/properties/TOTP_LAST",
+      "type": "number",
+      "title": "The Totp_last Schema",
+      "default": 0.0,
+      "examples": [
+        7.5
+      ]
+    },
+    "WBC_MAX": {
+      "$id": "#/properties/WBC_MAX",
+      "type": "number",
+      "title": "The Wbc_max Schema",
+      "default": 0.0,
+      "examples": [
+        8.4
+      ]
+    },
+    "WBC_MIN": {
+      "$id": "#/properties/WBC_MIN",
+      "type": "number",
+      "title": "The Wbc_min Schema",
+      "default": 0.0,
+      "examples": [
+        5.8
+      ]
+    },
+    "WBC_DIFFMAX": {
+      "$id": "#/properties/WBC_DIFFMAX",
+      "type": "number",
+      "title": "The Wbc_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.4184
+      ]
+    },
+    "WBC_DIFFMIN": {
+      "$id": "#/properties/WBC_DIFFMIN",
+      "type": "number",
+      "title": "The Wbc_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.4348
+      ]
+    },
+    "WBC_TVAR": {
+      "$id": "#/properties/WBC_TVAR",
+      "type": "number",
+      "title": "The Wbc_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.4439
+      ]
+    },
+    "WBC_LAST": {
+      "$id": "#/properties/WBC_LAST",
+      "type": "number",
+      "title": "The Wbc_last Schema",
+      "default": 0.0,
+      "examples": [
+        6.8
+      ]
+    },
+    "APRI_MAX": {
+      "$id": "#/properties/APRI_MAX",
+      "type": "number",
+      "title": "The Apri_max Schema",
+      "default": 0.0,
+      "examples": [
+        0.6334
+      ]
+    },
+    "APRI_MIN": {
+      "$id": "#/properties/APRI_MIN",
+      "type": "number",
+      "title": "The Apri_min Schema",
+      "default": 0.0,
+      "examples": [
+        0.3301
+      ]
+    },
+    "APRI_DIFFMAX": {
+      "$id": "#/properties/APRI_DIFFMAX",
+      "type": "number",
+      "title": "The Apri_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.04769
+      ]
+    },
+    "APRI_DIFFMIN": {
+      "$id": "#/properties/APRI_DIFFMIN",
+      "type": "number",
+      "title": "The Apri_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.0533
+      ]
+    },
+    "APRI_TVAR": {
+      "$id": "#/properties/APRI_TVAR",
+      "type": "number",
+      "title": "The Apri_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.059
+      ]
+    },
+    "APRI_LAST": {
+      "$id": "#/properties/APRI_LAST",
+      "type": "number",
+      "title": "The Apri_last Schema",
+      "default": 0.0,
+      "examples": [
+        0.4405
+      ]
+    },
+    "ASTALT_MAX": {
+      "$id": "#/properties/ASTALT_MAX",
+      "type": "number",
+      "title": "The Astalt_max Schema",
+      "default": 0.0,
+      "examples": [
+        1.0455
+      ]
+    },
+    "ASTALT_MIN": {
+      "$id": "#/properties/ASTALT_MIN",
+      "type": "number",
+      "title": "The Astalt_min Schema",
+      "default": 0.0,
+      "examples": [
+        0.7308
+      ]
+    },
+    "ASTALT_DIFFMAX": {
+      "$id": "#/properties/ASTALT_DIFFMAX",
+      "type": "number",
+      "title": "The Astalt_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.04751
+      ]
+    },
+    "ASTALT_DIFFMIN": {
+      "$id": "#/properties/ASTALT_DIFFMIN",
+      "type": "number",
+      "title": "The Astalt_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.0473
+      ]
+    },
+    "ASTALT_TVAR": {
+      "$id": "#/properties/ASTALT_TVAR",
+      "type": "number",
+      "title": "The Astalt_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.0477
+      ]
+    },
+    "ASTALT_LAST": {
+      "$id": "#/properties/ASTALT_LAST",
+      "type": "number",
+      "title": "The Astalt_last Schema",
+      "default": 0.0,
+      "examples": [
+        0.88235
+      ]
+    },
+    "BMI_MAX": {
+      "$id": "#/properties/BMI_MAX",
+      "type": "number",
+      "title": "The Bmi_max Schema",
+      "default": 0.0,
+      "examples": [
+        27.87
+      ]
+    },
+    "BMI_MIN": {
+      "$id": "#/properties/BMI_MIN",
+      "type": "number",
+      "title": "The Bmi_min Schema",
+      "default": 0.0,
+      "examples": [
+        25.36
+      ]
+    },
+    "BMI_DIFFMAX": {
+      "$id": "#/properties/BMI_DIFFMAX",
+      "type": "number",
+      "title": "The Bmi_diffmax Schema",
+      "default": 0.0,
+      "examples": [
+        0.8355
+      ]
+    },
+    "BMI_DIFFMIN": {
+      "$id": "#/properties/BMI_DIFFMIN",
+      "type": "number",
+      "title": "The Bmi_diffmin Schema",
+      "default": 0.0,
+      "examples": [
+        -0.743
+      ]
+    },
+    "BMI_TVAR": {
+      "$id": "#/properties/BMI_TVAR",
+      "type": "number",
+      "title": "The Bmi_tvar Schema",
+      "default": 0.0,
+      "examples": [
+        0.6057
+      ]
+    },
+    "BMI_LAST": {
+      "$id": "#/properties/BMI_LAST",
+      "type": "number",
+      "title": "The Bmi_last Schema",
+      "default": 0.0,
+      "examples": [
+        26.67
+      ]
+    },
+    "TimeToOutcome": {
+      "$id": "#/properties/TimeToOutcome",
+      "type": "integer",
+      "title": "The Timetooutcome Schema",
+      "default": 0,
+      "examples": [
+        365
+      ]
+    },
+    "Outcome": {
+      "$id": "#/properties/Outcome",
+      "type": "number",
+      "title": "The Outcome Schema",
+      "default": 0.0,
+      "examples": [
+        0.5
+      ]
+    }
+  }
+}

@@ -1,0 +1,403 @@
+openapi: 3.0.2
+info:
+  description: API Description
+  title: Boosting Model Prediction
+  version: 1.0.0
+paths:
+  /99999-survival/predict:
+    post:
+      tags:
+        - Boosting Model Prediction
+      requestBody:
+        description: inputs
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/input'
+      responses:
+        '200':
+          description: response
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/output'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: 'https://demo.kgrid.org/schemas/basicerror.yaml'
+      x-kgrid-activation:
+        artifact: predict.R
+        adapter: Rplumber
+        entry: predict
+  /99999-survival/inputschema:
+    get:
+      tags:
+        - Boosting Model Prediction
+      responses:
+        '200':
+          description: OK
+  /99999-survival/test:
+    get:
+      tags:
+        - Boosting Model Prediction
+      responses:
+        '200':
+          description: OK
+components:
+  schemas:
+    input:
+      type: object
+      properties:
+        GENDERM:
+          type: boolean
+          example: true
+        RACEHISPANIC:
+          type: boolean
+          example: false
+        RACEMISSING:
+          type: boolean
+          example: false
+        RACEOTHER:
+          type: boolean
+          example: false
+        RACEWHITE:
+          type: boolean
+          example: false
+        AGE:
+          type: number
+          example: 52
+        ALB_MAX:
+          type: number
+          example: 4.2
+        ALB_MIN:
+          type: number
+          example: 3.7
+        ALB_DIFFMAX:
+          type: number
+          example: 0.07247
+        ALB_DIFFMIN:
+          type: number
+          example: -0.0801
+        ALB_TVAR:
+          type: number
+          example: 0.07657
+        ALB_LAST:
+          type: number
+          example: 4
+        ALKRATIO_MAX:
+          type: number
+          example: 0.7477
+        ALKRATIO_MIN:
+          type: number
+          example: 0.5604
+        ALKRATIO_DIFFMAX:
+          type: number
+          example: 0.0252
+        ALKRATIO_DIFFMIN:
+          type: number
+          example: -0.0297
+        ALKRATIO_TVAR:
+          type: number
+          example: 0.02729
+        ALKRATIO_LAST:
+          type: number
+          example: 0.6429
+        ALTRATIO_MAX:
+          type: number
+          example: 1.2444
+        ALTRATIO_MIN:
+          type: number
+          example: 0.6508
+        ALTRATIO_DIFFMAX:
+          type: number
+          example: 0.0765
+        ALTRATIO_DIFFMIN:
+          type: number
+          example: -0.0947
+        ALTRATIO_TVAR:
+          type: number
+          example: 0.08713
+        ALTRATIO_LAST:
+          type: number
+          example: 0.8571
+        ASTRATIO_MAX:
+          type: number
+          example: 1.3409
+        ASTRATIO_MIN:
+          type: number
+          example: 0.75
+        ASTRATIO_DIFFMAX:
+          type: number
+          example: 0.0790
+        ASTRATIO_DIFFMIN:
+          type: number
+          example: -0.0949
+        ASTRATIO_TVAR:
+          type: number
+          example: 0.08856
+        ASTRATIO_LAST:
+          type: number
+          example: 0.9512
+        BIL_MAX:
+          type: number
+          example: 0.8
+        BIL_MIN:
+          type: number
+          example: 0.4
+        BIL_DIFFMAX:
+          type: number
+          example: 0.05743
+        BIL_DIFFMIN:
+          type: number
+          example: -0.0636
+        BIL_TVAR:
+          type: number
+          example: 0.5938
+        BIL_LAST:
+          type: number
+          example: 0.6
+        BUN_MAX:
+          type: number
+          example: 17
+        BUN_MIN:
+          type: number
+          example: 10
+        BUN_DIFFMAX:
+          type: number
+          example: 1.4194
+        BUN_DIFFMIN:
+          type: number
+          example: -1.3680
+        BUN_TVAR:
+          type: number
+          example: 1.3135
+        BUN_LAST:
+          type: number
+          example: 13
+        CI_MAX:
+          type: number
+          example: 106
+        CI_MIN:
+          type: number
+          example: 101
+        CI_DIFFMAX:
+          type: number
+          example: 1.0871
+        CI_DIFFMIN:
+          type: number
+          example: -1.0231
+        CI_TVAR:
+          type: number
+          example: 0.9979
+        CI_LAST:
+          type: number
+          example: 103
+        CRE_MAX:
+          type: number
+          example: 1.1
+        CRE_MIN:
+          type: number
+          example: 0.9
+        CRE_DIFFMAX:
+          type: number
+          example: 0.04443
+        CRE_DIFFMIN:
+          type: number
+          example: -0.04348
+        CRE_TVAR:
+          type: number
+          example: 0.0398
+        CRE_LAST:
+          type: number
+          example: 1
+        GLU_MAX:
+          type: number
+          example: 12
+        GLU_MIN:
+          type: number
+          example: 8.7
+        GLU_DIFFMAX:
+          type: number
+          example: 0.8696
+        GLU_DIFFMIN:
+          type: number
+          example: -0.949
+        GLU_TVAR:
+          type: number
+          example: 0.8717
+        GLU_LAST:
+          type: number
+          example: 10.1
+        HEM_MAX:
+          type: number
+          example: 15.6
+        HEM_MIN:
+          type: number
+          example: 14
+        HEM_DIFFMAX:
+          type: number
+          example: 0.2306
+        HEM_DIFFMIN:
+          type: number
+          example: -0.291
+        HEM_TVAR:
+          type: number
+          example: 0.2682
+        HEM_LAST:
+          type: number
+          example: 14.8
+        PLT_MAX:
+          type: number
+          example: 25.7
+        PLT_MIN:
+          type: number
+          example: 19.5
+        PLT_DIFFMAX:
+          type: number
+          example: 0.9277
+        PLT_DIFFMIN:
+          type: number
+          example: -1.01
+        PLT_TVAR:
+          type: number
+          example: 1.010
+        PLT_LAST:
+          type: number
+          example: 22.2
+        K_MAX:
+          type: number
+          example: 4.6
+        K_MIN:
+          type: number
+          example: 3.9
+        K_DIFFMAX:
+          type: number
+          example: 0.1505
+        K_DIFFMIN:
+          type: number
+          example: -0.1513
+        K_TVAR:
+          type: number
+          example: 0.1430
+        K_LAST:
+          type: number
+          example: 4.2
+        NA_MAX:
+          type: number
+          example: 141
+        NA_MIN:
+          type: number
+          example: 137
+        NA_DIFFMAX:
+          type: number
+          example: 0.9318
+        NA_DIFFMIN:
+          type: number
+          example: -0.9587
+        NA_TVAR:
+          type: number
+          example: 0.8822
+        NA_LAST:
+          type: number
+          example: 139
+        TOTP_MAX:
+          type: number
+          example: 7.9
+        TOTP_MIN:
+          type: number
+          example: 7.1
+        TOTP_DIFFMAX:
+          type: number
+          example: 0.1098
+        TOTP_DIFFMIN:
+          type: number
+          example: -0.1295
+        TOTP_TVAR:
+          type: number
+          example: 0.1243
+        TOTP_LAST:
+          type: number
+          example: 7.5
+        WBC_MAX:
+          type: number
+          example: 8.4
+        WBC_MIN:
+          type: number
+          example: 5.8
+        WBC_DIFFMAX:
+          type: number
+          example: 0.4184
+        WBC_DIFFMIN:
+          type: number
+          example: -0.4348
+        WBC_TVAR:
+          type: number
+          example: 0.4439
+        WBC_LAST:
+          type: number
+          example: 6.8
+        APRI_MAX:
+          type: number
+          example: 0.6334
+        APRI_MIN:
+          type: number
+          example: 0.3301
+        APRI_DIFFMAX:
+          type: number
+          example: 0.04769
+        APRI_DIFFMIN:
+          type: number
+          example: -0.0533
+        APRI_TVAR:
+          type: number
+          example: 0.0590
+        APRI_LAST:
+          type: number
+          example: 0.4405
+        ASTALT_MAX:
+          type: number
+          example: 1.0455
+        ASTALT_MIN:
+          type: number
+          example: 0.7308
+        ASTALT_DIFFMAX:
+          type: number
+          example: 0.04751
+        ASTALT_DIFFMIN:
+          type: number
+          example: -0.0473
+        ASTALT_TVAR:
+          type: number
+          example: 0.0477
+        ASTALT_LAST:
+          type: number
+          example: 0.88235
+        BMI_MAX:
+          type: number
+          example: 27.87
+        BMI_MIN:
+          type: number
+          example: 25.36
+        BMI_DIFFMAX:
+          type: number
+          example: 0.8355
+        BMI_DIFFMIN:
+          type: number
+          example: -0.7430
+        BMI_TVAR:
+          type: number
+          example: 0.6057
+        BMI_LAST:
+          type: number
+          example: 26.67
+        TimeToOutcome:
+          type: number
+          example: 365
+        Outcome:
+          type: number
+          example: 0.5
+    output:
+      type: object
