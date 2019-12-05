@@ -22,6 +22,8 @@ The following packages are needed to run the R script KO in the test server:
 - jsonlite
 - randomForest
 - yaml
+- survival
+- gbm
 
 Additionally, a dev version of `plumber` is needed for the test server to be able to serve the customized OpenAPI yaml file.
 To install the dev version, run
