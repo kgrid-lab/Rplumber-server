@@ -29,7 +29,7 @@ paths:
               schema:
                 $ref: 'https://demo.kgrid.org/schemas/basicerror.yaml'
       x-kgrid-activation:
-        artifact: predict.R
+        artifact: src/predict.R
         adapter: Rplumber
         entry: predict
   /99999-survival/inputschema:
@@ -39,6 +39,10 @@ paths:
       responses:
         '200':
           description: OK
+      x-kgrid-activation:
+        artifact: src/schema.json
+        adapter: resource
+        entry: schema
   /99999-survival/test:
     get:
       tags:
@@ -46,6 +50,10 @@ paths:
       responses:
         '200':
           description: OK
+      x-kgrid-activation:
+        artifact: src/testdata.json
+        adapter: Rplumber
+        entry: test
 components:
   schemas:
     input:

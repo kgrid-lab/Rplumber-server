@@ -11,9 +11,11 @@
         "Boosting",
         "R"
     ],
+    "citations":[
+      "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0208141"
+    ],
     "hasServiceSpecification": "service.yaml",
-    "hasDeploymentSpecification": "service.yaml",
-    "hasPayload": ["predict.R","fit_boosting_full_lgt.data"],
+    "hasPayload": "src/predict.R",
     "@context": [
         "http://kgrid.org/koio/contexts/knowledgeobject.jsonld"
     ]
