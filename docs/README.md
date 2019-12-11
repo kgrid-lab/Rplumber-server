@@ -49,3 +49,5 @@ The test server mounts three routes, each with one or more endpoints:
 - `/99999-hepcrf/predict`
 - `/99999-hepcrf/test`
 - `/99999-hepcrf/inputschema`
+
+More information on the KO of `Survival Boosting Model` can be found [here](https://kgrid-lab.github.io/Rplumber-server/BoostingModel)
